@@ -38,10 +38,10 @@ class ScannerActivity : AppCompatActivity(),ScannerView, ZXingScannerView.Result
 
     override fun handleResult(p0: Result?) {
 
-        val intent=Intent(Intent.ACTION_VIEW)
-//        intent.data= Uri.parse(p0!!.text.toString())
-        //this line of code for navigating to browser with QR_code website....
-        startActivity(intent)
+//        val intent=Intent(Intent.ACTION_VIEW)
+////        intent.data= Uri.parse(p0!!.text.toString())
+//        //this line of code for navigating to browser with QR_code website....
+//        startActivity(intent)
         Toast.makeText(this,p0!!.text.toString(),Toast.LENGTH_LONG).show()
     }
 
